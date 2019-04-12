@@ -1,0 +1,13 @@
+<%= form_with(model: [ @user, @user.articles.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :publication_date %><br>
+    <%= form.date_field :publication_date %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,16 @@
+  <p>
+    <strong>Article:</strong>
+    <%= article.name %>
+  </p>
+ 
+  <p>
+    <strong>Publication Date:</strong>
+    <%= article.publication_date %>
+  </p>
+
+  <p>
+  <%= link_to 'Destroy Article', [article.user, article],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
+  
